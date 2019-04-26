@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="227.0">DirectApi.Keywords.NewWordstatReportInfo</node>
+    <node x="429.0" y="227.0">DirectApi.Keywords.WordstatReportInfo</node>
+    <node x="0.0" y="449.0">com.pullenti</node>
+    <node x="439.0" y="523.0">com.seoservice.model.TextForm</node>
+    <node x="391.0" y="301.0">httpbuilder</node>
+    <node x="171.0" y="79.0">DirectApi.Keywords.CreateNewWordstatReport</node>
+    <node x="197.0" y="301.0">com.seoservice.controllers.WordstatController</node>
+    <node x="222.0" y="227.0">com.seoservice.controllers.TextNaturalController</node>
+    <node x="340.0" y="375.0">DirectApi.Keywords.WordstatItem</node>
+    <node x="149.0" y="523.0">DirectApi.Info</node>
+    <node x="382.0" y="79.0">DirectApi.Keywords.GetWordstatReportList</node>
+    <node x="0.0" y="153.0">com.seoservice.SpringBootWebApplication</node>
+    <node x="0.0" y="301.0">com.seoservice.controllers.KeywordsController</node>
+    <node x="0.0" y="375.0">com.seoservice.model.KeywordsForm</node>
+    <node x="0.0" y="79.0">DirectApi.Keywords.GetWordstatReport</node>
+    <node x="171.0" y="375.0">com.seoservice.naturaltextanalizer.WordRankZipf</node>
+    <node x="200.5" y="0.0">DirectApi.Keywords.WordstatReport</node>
+    <node x="322.0" y="449.0">com.seoservice.naturaltextanalizer.WordInText</node>
+    <node x="239.0" y="153.0">DirectApi.Keywords.WordstatReportStatusInfo</node>
+    <node x="294.0" y="523.0">com.seoservice.model.WSModel</node>
+    <node x="476.0" y="449.0">tools.ExelWorker</node>
+    <node x="164.0" y="449.0">com.seoservice.naturaltextanalizer.TextAnalizer</node>
+    <node x="0.0" y="523.0">com.google.gson</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="DirectApi.Keywords.GetWordstatReportList" target="DirectApi.Keywords.WordstatReport">
+      <point x="0.0" y="-14.5" />
+      <point x="466.0" y="54.0" />
+      <point x="310.5" y="54.0" />
+      <point x="44.0" y="14.5" />
+    </edge>
+    <edge source="DirectApi.Keywords.GetWordstatReport" target="DirectApi.Keywords.WordstatReport">
+      <point x="0.0" y="-14.5" />
+      <point x="75.5" y="54.0" />
+      <point x="222.5" y="54.0" />
+      <point x="-44.0" y="14.5" />
+    </edge>
+    <edge source="DirectApi.Keywords.CreateNewWordstatReport" target="DirectApi.Keywords.WordstatReport">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5354497354497358" x="771.0000000000002" y="306.9999999999999" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

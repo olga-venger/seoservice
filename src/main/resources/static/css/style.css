@@ -1,0 +1,243 @@
+@font-face {
+    font-family: Arkhive;
+    src: local("Arkhive");
+url("../fonts/Arkhive.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Cambria;
+    src: local(Cambria);
+url("../fonts/cambria.ttc");
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Arkhive';
+    background: url(../img/Lavanda.jpg) no-repeat fixed;
+    padding: 0px;
+    margin: 0px;
+    min-width: 1000px;
+    font-size: 20px;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.container {
+    width: 80%;
+    margin-left: 10%;
+    min-height: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+}
+.container-1{
+margin-left: 10%;
+    margin-right: 10%;
+}
+.information{
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 0; /* Отступ снизу */
+    line-height: 1;
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+.content {
+    margin-bottom: 10%;
+}
+.content::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.container::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+h1 {
+    font-size: 24px;
+    color: grey;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+textarea, .keywords-form, table, p {
+    font-family: 'Cambria';
+}
+
+th {
+    font-family: 'Arkhive';
+}
+
+textarea, .btn {
+    font-size: 16px;
+    min-width: 100%;
+    min-height: 210px;
+    height: 40%;
+    border: 2px solid #9927ab;
+    box-shadow: 0 0 15px #9927ab;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+li.active {
+    text-decoration: underline;
+}
+
+
+.btn {
+    background: white;
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid grey;
+    box-shadow: 0 0 15px #ba7ac4;
+}
+
+input {
+    display: none;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul > li {
+    display: inline-block;
+    border-bottom: 2px solid #9927ab;
+    padding: 10px;
+    margin: 2px;
+}
+
+a:hover {
+    border-bottom: 2px solid grey;
+    color: #9927ab;
+    cursor: pointer;
+}
+
+li:active {
+    border-bottom: 2px solid grey;
+    color: #9927ab;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header {
+    position: relative;
+    height: 100px;
+    margin-bottom: 0;
+}
+header::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.text-form {
+    text-align: center;
+    /*margin: 0 auto;*/
+}
+
+.list {
+    margin-bottom: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: inline-block;
+    height: auto;
+}
+
+.rt {
+    text-align: right; /* Выравнивание по правому краю */
+}
+
+table {
+    border: 2px grey;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid grey;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.list table, .list td {
+    border: none;
+}
+
+table#zipf-table {
+    table-layout: fixed;
+    width: 100%;
+}
+table#zipf-table td, table#zipf-table th  {
+    text-align: center;
+}
+table#zipf-table td.td-left {
+    text-align: left;
+    text-indent: 0.5em;
+}
+
+.box{
+    margin-top: 5%;
+    white-space:nowrap
+}
+.box div{
+    display:inline-block;
+    float: left;
+    position: relative;
+}
+
+.main-footer {
+    /*
+    padding-top: 95px;
+    padding-bottom: 75px;
+    background-color: rgba(255, 255, 255, 0.9);
+    */
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+footer {
+position: absolute;
+left: 0;
+bottom: 0;
+height: 80px;
+width: 80%;
+margin-left: 10%;
+}
+
+.error {
+    margin-top: 50px;
+    display: none;
+    text-align: center;
+    font-family: Cambria;
+    color: white;
+    border: 2px solid firebrick;
+    background: firebrick;
+    border-radius: 10px;
+    width: 100%;
+}
