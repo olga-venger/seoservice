@@ -1,15 +1,15 @@
-package DirectApi.Keywords;
+package com.DirectApi.Keywords;
 
-import DirectApi.Info.OAuthInfo;
+import com.DirectApi.Info.OAuthInfo;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.annotations.SerializedName;
-import httpbuilder.HttpBuilder;
+import tools.httpbuilder.HttpBuilder;
 
 import java.io.IOException;
 import java.util.*;
 
-import static httpbuilder.HttpBuilder.makePostJsonRequest;
+import static tools.httpbuilder.HttpBuilder.makePostJsonRequest;
 
 public class GetWordstatReport extends WordstatReport{
 

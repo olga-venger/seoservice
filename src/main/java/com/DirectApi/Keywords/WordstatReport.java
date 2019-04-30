@@ -1,6 +1,6 @@
-package DirectApi.Keywords;
+package com.DirectApi.Keywords;
 
-import DirectApi.Info.OAuthInfo;
+import com.DirectApi.Info.OAuthInfo;
 
 public class WordstatReport {
     private String token = OAuthInfo.TOKEN;

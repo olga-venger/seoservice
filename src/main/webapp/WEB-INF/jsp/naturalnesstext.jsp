@@ -51,9 +51,9 @@
 
         <nav>
             <ul>
-                <li><a href="/keywords">Выделение ключевых слов</a></li>
-                <li><a href="/wordstat">Яндекс вордстат</a></li>
-                <li class="active"><a href="/naturalnesstext">Естественность текста</a></li>
+                <li><a href="./keywords">Выделение ключевых слов</a></li>
+                <li><a href="./wordstat">Яндекс вордстат</a></li>
+                <li class="active"><a href="./naturalnesstext">Естественность текста</a></li>
             </ul>
         </nav>
     </header>

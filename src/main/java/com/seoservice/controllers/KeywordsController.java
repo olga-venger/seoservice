@@ -1,7 +1,7 @@
 package com.seoservice.controllers;
 
-import com.seoservice.model.KeywordsForm;
 import com.pullenti.PulentiSDK;
+import com.seoservice.model.KeywordsForm;
 import com.seoservice.model.TextForm;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

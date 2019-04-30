@@ -1,5 +1,5 @@
 package com.seoservice.model;
-import DirectApi.Keywords.WordstatItem;
+import com.DirectApi.Keywords.WordstatItem;
 
 import java.util.ArrayList;
 import java.util.List;

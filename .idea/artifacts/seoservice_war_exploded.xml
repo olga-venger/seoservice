@@ -45,8 +45,6 @@
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.0.2" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.11" />
           <element id="library" level="project" name="Maven: org.apache.poi:poi:3.11" />
-          <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.3.6" />
-          <element id="library" level="project" name="Maven: org.webjars:jquery:2.1.4" />
         </element>
       </element>
       <element id="directory" name="META-INF">

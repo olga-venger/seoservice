@@ -1,4 +1,4 @@
-package DirectApi.Keywords;
+package com.DirectApi.Keywords;
 
 import com.google.gson.annotations.SerializedName;
 

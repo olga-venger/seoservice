@@ -1,7 +1,7 @@
 package com.seoservice.controllers;
 
-import DirectApi.Keywords.GetWordstatReport;
-import DirectApi.Keywords.WordstatItem;
+import com.DirectApi.Keywords.GetWordstatReport;
+import com.DirectApi.Keywords.WordstatItem;
 import tools.ExelWorker;
 import com.seoservice.model.KeywordsForm;
 import com.seoservice.model.WSModel;

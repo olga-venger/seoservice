@@ -1,4 +1,4 @@
-package httpbuilder;
+package tools.httpbuilder;
 
 import java.io.IOException;
 import java.net.Socket;
