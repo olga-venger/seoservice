@@ -1,7 +1,8 @@
 package com.seoservice.controllers;
 
-import com.DirectApi.Keywords.GetWordstatReport;
-import com.DirectApi.Keywords.WordstatItem;
+import com.directapi.keywords.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import tools.ExelWorker;
 import com.seoservice.model.KeywordsForm;
 import com.seoservice.model.WSModel;
@@ -16,10 +17,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
+
 //получение статистики от Я.Вордстат
 @Controller
 public class WordstatController {
     List<WordstatItem> listWS = new ArrayList<>();
+    private Logger log = LoggerFactory.getLogger(this.getClass());
 
     @RequestMapping(value = "/wordstat", method = RequestMethod.GET)
     public String showOwnKeywordsToWordstat(Model model) {
@@ -36,15 +39,36 @@ public class WordstatController {
     @RequestMapping(value = "/getStatisticFromWordstat", method = RequestMethod.POST)
     public String sendKeywordsToWordstat(@ModelAttribute("keywordsForm") KeywordsForm keywordsForm, Model model) throws IOException {
 
+        log.info("Формирование отчёта о статистике поисковых запросов.");
         //если КС как текст, то преобразовать в массив КС
         if (keywordsForm.getKeywords() == null && keywordsForm.getTextString() != null) {
             keywordsForm.setKeywords(keywordsForm.toArrayList());
         }
 
         listWS.clear();
-        //получить статистику для всех слов и вывести на странице
-        GetWordstatReport report = GetWordstatReport.getWordstatReport(keywordsForm.getKeywords(), null);
-        listWS = report.getAllSearchedWithSorted(false);
+
+        CreateNewWordstatReport report = (CreateNewWordstatReport) WordstatReport.create(new CreateNewWordstatReport(keywordsForm.getKeywords(), null));
+        String currentStatusReport = "";
+        do {
+            try {
+                log.info("Ожидание 5 секунд...");
+//                System.out.println("Ждите 5 секунд...");
+                Thread.sleep(5000);
+
+                GetWordstatReportList reportList = (GetWordstatReportList) WordstatReport.create(new GetWordstatReportList());
+                currentStatusReport = reportList.getReportStatusInfo(report.ID);
+                log.info("Текущий статус отчёта: " + currentStatusReport);
+//                System.out.println(currentStatusReport);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        while (!currentStatusReport.equals("Done"));
+log.info("Отчёт сформирован!");
+//        System.out.println("Отчёт сформирован");
+
+        GetWordstatReport finalReport = (GetWordstatReport)WordstatReport.create(new GetWordstatReport(report.ID));
+        listWS = finalReport.getAllSearchedWithSorted(false);
 
 //        listWS.add(new WordstatItem("Яблоко", 100));
 //        listWS.add(new WordstatItem("Груша", 132));

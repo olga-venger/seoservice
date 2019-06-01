@@ -1,6 +1,6 @@
 package tools;
 
-import com.DirectApi.Keywords.WordstatItem;
+import com.directapi.keywords.WordstatItem;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;

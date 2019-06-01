@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li class="active"><a href="./keywords">Выделение ключевых слов</a></li>
-                <li><a href="./wordstat">Яндекс вордстат</a></li>
+                <li><a href="./wordstat">Статистика по КС</a></li>
                 <li><a href="./naturalnesstext">Естественность текста</a></li>
             </ul>
         </nav>
@@ -33,7 +33,7 @@
 
             <div class="list">
                 <table align="center">
-                    <c:forEach var="word" items="${content}" varStatus="theCount" end="19">
+                    <c:forEach var="word" items="${content}" varStatus="theCount" end="49">
                         <tr>
                             <td><form:checkbox path="keywords" value="${word}" class="checkbox"
                                                id="keyword${theCount.count}"/>
@@ -46,12 +46,11 @@
             </div>
 
             <div align="center">
-                <input id="send" type="submit" align="center"/><label for="send" class="btn">Отправить на проверку в
-                Яндекс.Вордстат</label>
+                <input id="send" type="submit" align="center"/><label for="send" class="btn">Получить статистику по КС</label>
             </div>
         </form:form>
     </div>
-    <footer class="main-footer"><p align="right">2019 г. МАИ.</p></footer>
+    <%--<footer class="main-footer"><p align="right">2019 г. МАИ.</p></footer>--%>
 
 </div>
 </body>

@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="seoservice:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="seoservice-0.0.3-SNAPSHOT.war">
+    <root id="archive" name="seoservice-0.1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="seoservice:war exploded" />
     </root>
   </artifact>

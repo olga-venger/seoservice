@@ -1,4 +1,4 @@
-package com.DirectApi.Info;
+package com.directapi.info;
 
 public class OAuthInfo {
     public static String TOKEN = "AQAAAAATVo9jAAVU-aKeSRopPESnm3YmMarqFPY";

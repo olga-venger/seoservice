@@ -11,13 +11,12 @@
     <groupId>com.seoservice</groupId>
     <artifactId>seoservice</artifactId>
     <packaging>war</packaging>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <name>seo-service</name>
     <description>seo-service</description>
 
     <properties>
         <java.version>1.8</java.version>
-
     </properties>
 
     <dependencies>

@@ -88,18 +88,23 @@ public class TextAnalizer {
     }
 
     //недописан
-    public void checkDuplicationWords() {
+    public Integer checkDuplicationWords() {
         StringTokenizer stringTokenizer = new StringTokenizer(text, " .-,!;:?\"<>[]\\\n\t\r»«—()…");
 
-        StringBuffer currentWord = new StringBuffer();
-        StringBuffer previousWord = new StringBuffer();
-
+        String currentWord = "";
+        String previousWord = "";
+Integer counter = 0;
         while (stringTokenizer.hasMoreTokens()) {
-            currentWord.append(stringTokenizer.nextToken());
+            currentWord = stringTokenizer.nextToken();
             if (currentWord.equals(previousWord)) {
-
+//                System.out.println(currentWord);
+                counter++;
+            }
+            else {
+                previousWord = currentWord;
             }
         }
+        return counter;
     }
 
     public double getIndexFlesh(){
