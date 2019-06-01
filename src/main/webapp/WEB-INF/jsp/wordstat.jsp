@@ -19,17 +19,21 @@
     <link href="${jstlCss}" rel="stylesheet"/>
 
     <script type="text/javascript">
-        function validateTextForm(textarea) {
-            valid = true;
-            if (textarea.value != 0) {
-                return valid;
-            } else {
-                document.getElementById('non-valid-form').style.display = "block";
-                document.getElementById('non-valid-form').innerText = 'Поле не может быть пустым!';
-                return false;
-            }
-        };
+        // function validateTextForm(textarea) {
+        //     alert("call");
+        //     if (textarea.value != 0) {
+        //         var reg = [a-яА-Яa-zA-Z];
+        //         alert("if");
+        //         return true;
+        //     } else {
+        //         alert("else");
+        //         document.getElementById('non-valid-form').style.display = "block";
+        //         document.getElementById('non-valid-form').innerText = 'Поле не может быть пустым!';
+        //         return false;
+        //     }
+        // };
     </script>
+
 
 </head>
 
@@ -69,8 +73,9 @@
                     <%--<label for="reset" class="btn">Очистить</label><input id="reset" type="reset" class="btn"--%>
                                                                           <%--onclick="document.getElementById('fileOutput').value='';"/>--%>
                     <label for="send-ws" class="btn">Проверить статистику</label><input id="send-ws" type="submit"
-                                                                                        onclick="return validateTextForm(document.getElementById('fileOutput'))"/>
+                                                                                        onclick="return validateTextFormWS(document.getElementById('fileOutput'))"/>
                 </p>
+
             </form:form>
 
             <details>
@@ -127,7 +132,7 @@
             </details>
         </div>
     </div>
-    <footer class="main-footer"><p align="right">2019 г. МАИ.</p></footer>
+    <%--<footer class="main-footer"><p align="right">2019 г. МАИ.</p></footer>--%>
 
 </div>
 </body>

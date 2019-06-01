@@ -176,3 +176,19 @@ document.onmouseout = function (e) {
     }
 
 };
+function validateTextFormWS(textarea) {
+    alert("call");
+    if (textarea.value != 0) {
+         var reg = /[^a-яА-Яa-zA-Z0-9 ]\n]/m;
+         if(reg.test(textarea.value)){
+             document.getElementById('non-valid-form').style.display = "block";
+             document.getElementById('non-valid-form').innerText = 'Допустимы только символы русского и латинского алфавита и цифры!';
+             return false;
+         }
+        return true;
+    } else {
+        document.getElementById('non-valid-form').style.display = "block";
+        document.getElementById('non-valid-form').innerText = 'Поле не может быть пустым!';
+        return false;
+    }
+};
